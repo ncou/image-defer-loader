@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Img defer Demo</title>
+</head>
+
+<body>
+
+<h1>Img defer Demo - Header</h1>
+<img class="defer" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="http://wallpaperswide.com/download/big_wave-wallpaper-2048x1152.jpg">
+
+<script src="img-defer.js"></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", function(event) {
+    imgDefer.load({
+        selector: '.defer'
+    });
+});
+</script>
+
+</body>
+</html>
